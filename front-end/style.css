@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+}
+
+.logo-panier {
+    width: 100%;
+    height: 100px;
+    background-color: #F3E9F1;
+    padding-bottom: 0px;
+}
+
+.img-logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+    object-fit: contain;
+}
+
+.panier {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    list-style-type: none;
+    background-color: #c5b5be;
+    color: black;
+    padding: 10px;
+}
+
+.liste {
+    margin: 40px;
+    float: right;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.presentation {
+    background-color: #ce9fb9;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.title {
+    padding-top: 30px;
+    margin-block-start: 0px;
+}
+
+.prest {
+    color: white;
+    font-size: 40px;
+}
+
+.card-all {
+    background-color: #f3e9f1!important;
+}
+
+.btn-acht {
+    background-color: #c5b5be;
+}
+
+.btn-pan {
+    background-color: greenyellow;
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #c5b5be;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer_list {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer_list a {
+    margin: 40px;
+    text-decoration: none;
+    color: black;
+}
