@@ -1,11 +1,12 @@
 //mise a jour du panier 
 basketPreview()
-// récupération de l'id du produit
+    // récupération de l'id du produit
 const searchParams = new URLSearchParams(location.search);
 const newId = searchParams.get("_id");
 
+
 //modification de l'adresse d'appel à l'API
-const newUrl = `https://teddies-api.herokuapp.com/api/cameras/${newId}`;
+const newUrl = `http://localhost:3000/api/cameras/${newId}`;
 
 fetch(newUrl)
     .then((response) => response.json())
@@ -76,8 +77,7 @@ fetch(newUrl)
 
             // si déjaPresent incrémente seulement la quantité
             if (isAlreadyPresent) {
-                basket[indexModification].quantity =
-                    +basket[indexModification].quantity + +objectProduct.quantity;
+                basket[indexModification].quantity = +basket[indexModification].quantity + +objectProduct.quantity;
                 localStorage.setItem("cameras", JSON.stringify(basket));
                 // si non, ajoute le produit au localStorage
             } else {

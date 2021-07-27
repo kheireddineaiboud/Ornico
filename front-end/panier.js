@@ -96,13 +96,13 @@ if (basket.length < 1) {
             }
 
             // on envoie en POST
-            fetch("https://teddies-api.herokuapp.com/api/cameras/order", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ contact, products }),
-            })
+            fetch("http://localhost:3000/api/cameras/order", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ contact, products }),
+                })
                 .then((response) => response.json())
                 .then((data) => {
                     localStorage.setItem("order", JSON.stringify(data));
